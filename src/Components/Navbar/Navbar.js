@@ -9,7 +9,7 @@ const Navbar = () => {
         <NavbarMenu />
       </div>
       <div className={styles.center}>
-        <p> Blog It</p>
+        <p> Lorem ips</p>
       </div>
       <div className={styles.right}>
         <div className={styles.auth}>

@@ -12,41 +12,55 @@ const NavbarMenu = () => {
       <div class="menu">
         <div class="menu-inner">
           <ul class="menu-nav">
-            <li class="menu-nav-item">
+            {/* <li class="menu-nav-item">
               <a class="menu-nav-link" href="#">
                 <span>
                   <div>Home</div>
                 </span>
               </a>
-            </li>
-            <li class="menu-nav-item">
+            </li> */}
+            <li class="menu-nav-item aaaa">
               <a class="menu-nav-link" href="#">
                 <span>
-                  <div>Bookmarks</div>
+                  <div>AUTHENTICATE</div>
+                </span>
+              </a>
+            </li>
+            <li class="menu-nav-item aaaa">
+              <a class="menu-nav-link" href="#">
+                <span>
+                  <div style={{ color: "red" }}>CREATE A POST</div>
                 </span>
               </a>
             </li>
             <li class="menu-nav-item">
               <a class="menu-nav-link" href="#">
                 <span>
-                  <div>About</div>
+                  <div>BOOKMARKS</div>
                 </span>
               </a>
             </li>
             <li class="menu-nav-item">
               <a class="menu-nav-link" href="#">
                 <span>
-                  <div>Search</div>
+                  <div>ABOUT US</div>
                 </span>
               </a>
             </li>
             <li class="menu-nav-item">
+              <a class="menu-nav-link" href="#">
+                <span>
+                  <div>SEARCH</div>
+                </span>
+              </a>
+            </li>
+            {/* <li class="menu-nav-item">
               <a class="menu-nav-link" href="#">
                 <span>
                   <div>Team</div>
                 </span>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

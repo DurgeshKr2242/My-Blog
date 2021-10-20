@@ -5,6 +5,7 @@
   background-color: var(--lightBlack);
   color: var(--primaryText);
   border-bottom: 1px solid var(--darkBlack);
+  z-index: 100;
 }
 /* .left {
   position: relative;
@@ -19,15 +20,18 @@
   display: grid;
   place-items: center;
   /* float: right; */
-  margin-left: 250px;
+  margin-left: 350px;
 }
 .center p {
   font-weight: 1000;
   font-size: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .auth {
   padding: 30px;
+}
+.auth p {
+  font-size: 14px;
 }
 .newPost {
   padding: 30px 40px 30px 40px;
@@ -41,4 +45,39 @@
 .newPost p {
   font-size: 14px;
   /* line-height: 73px; */
+}
+
+@media (max-width: 870px) {
+  .center {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 684px) {
+  .center p {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .auth {
+    padding: 30px 10px 30px 10px;
+  }
+  .newPost p {
+    font-size: 12px;
+  }
+  .newPost {
+    padding: 30px 10px 30px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .newPost {
+    display: none;
+  }
+  .auth {
+    display: none;
+  }
+  .navbarMainContainer {
+    min-height: 75px;
+  }
+  .center {
+    justify-content: flex-end;
+  }
 }
