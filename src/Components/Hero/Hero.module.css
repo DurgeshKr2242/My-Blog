@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap");
+
+.heroMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  background-color: var(--darkBlack);
+  position: relative;
+  min-height: 650px;
+}
+
+.heroMainContainer input[type="color"] {
+  background-color: #fff;
+
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.heroText {
+  /* margin-top: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  line-height: 30px;
+}
+.heroText h1 {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+.heroText h1 span {
+  padding: 0px 10px;
+  font-family: "Merienda", "Permanent Marker", cursive;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 7px;
+  /* font-weight: 100; */
+}
+.heroText p {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 2rem;
+}
+.heroText button {
+  margin: 150px 0px 0 0px;
+  padding: 10px 15px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.heroText button:hover {
+  color: white;
+  background-color: red;
+}
+.heroText img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(-90deg);
+  margin-left: 15px;
+}
+.totalBlogs {
+  position: absolute;
+  bottom: 90px;
+  left: 50px;
+  background: red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--primaryText);
+  font-weight: 500;
+  border: 2px solid black;
+}

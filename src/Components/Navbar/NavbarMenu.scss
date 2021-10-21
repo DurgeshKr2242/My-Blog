@@ -145,6 +145,7 @@ p {
   visibility: hidden;
   transition: 0.3s;
   padding-top: 80px;
+  z-index: 120;
 
   @include sp-layout {
     display: block;

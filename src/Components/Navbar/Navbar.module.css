@@ -6,6 +6,8 @@
   color: var(--primaryText);
   border-bottom: 1px solid var(--darkBlack);
   z-index: 100;
+  position: sticky;
+  top: 0;
 }
 /* .left {
   position: relative;
