@@ -5,6 +5,8 @@ const Hero = () => {
   const [currentColor, setCurrentColor] = useState("");
   const [currentTextColor, setCurrentTextColor] = useState("white");
   const [currentTextColor2, setCurrentTextColor2] = useState("#878686");
+
+  // HEX to RGB
   function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return result
@@ -15,6 +17,9 @@ const Hero = () => {
         }
       : null;
   }
+
+  // HANDLE COLOR CHANGE
+
   const handleCurrentColor = () => {
     setCurrentColor(colorRef.current.value);
     if (currentColor) {
@@ -23,7 +28,6 @@ const Hero = () => {
       let b = hexToRgb(currentColor).b;
 
       let hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
-      // console.log(hsp);
       if (hsp > 127.5) {
         setCurrentTextColor("black");
         setCurrentTextColor2("#383838");
@@ -33,19 +37,18 @@ const Hero = () => {
       }
     }
   };
-  //   const currentColor = colorRef.current.value;
-
-  useEffect(() => {
-    console.log(colorRef);
-    // console.log(red, green, blue);
-  }, []);
 
   return (
     <div
       style={{ backgroundColor: currentColor }}
       className={styles.heroMainContainer}
     >
-      <input ref={colorRef} type="color" onChange={handleCurrentColor} />
+      <input
+        ref={colorRef}
+        type="color"
+        onChange={handleCurrentColor}
+        colorpick-eyedropper-active="false"
+      />
 
       <div className={styles.heroText}>
         <h1 style={{ color: currentTextColor }}>
@@ -57,7 +60,7 @@ const Hero = () => {
         </p>
 
         <button>
-          EXPLORE YOUR FEED{" "}
+          EXPLORE YOUR FEED
           <lord-icon
             src="https://cdn.lordicon.com/tyounuzx.json"
             trigger="loop"
