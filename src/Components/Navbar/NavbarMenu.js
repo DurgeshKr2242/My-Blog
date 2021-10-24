@@ -4,58 +4,58 @@ const NavbarMenu = () => {
   return (
     <div>
       <input type="checkbox" id="burger-toggle" />
-      <label for="burger-toggle" class="burger-menu">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <label htmlFor="burger-toggle" className="burger-menu">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </label>
-      <div class="menu">
-        <div class="menu-inner">
-          <ul class="menu-nav">
-            {/* <li class="menu-nav-item">
-              <a class="menu-nav-link" href="#">
+      <div className="menu">
+        <div className="menu-inner">
+          <ul className="menu-nav">
+            {/* <li className="menu-nav-item">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div>Home</div>
                 </span>
               </a>
             </li> */}
-            <li class="menu-nav-item aaaa">
-              <a class="menu-nav-link" href="#">
+            <li className="menu-nav-item aaaa">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div>AUTHENTICATE</div>
                 </span>
               </a>
             </li>
-            <li class="menu-nav-item aaaa">
-              <a class="menu-nav-link" href="#">
+            <li className="menu-nav-item aaaa">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div style={{ color: "red" }}>CREATE A POST</div>
                 </span>
               </a>
             </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="#">
+            <li className="menu-nav-item">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div>BOOKMARKS</div>
                 </span>
               </a>
             </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="#">
+            <li className="menu-nav-item">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div>ABOUT US</div>
                 </span>
               </a>
             </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" href="#">
+            <li className="menu-nav-item">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div>SEARCH</div>
                 </span>
               </a>
             </li>
-            {/* <li class="menu-nav-item">
-              <a class="menu-nav-link" href="#">
+            {/* <li className="menu-nav-item">
+              <a className="menu-nav-link" href="qq">
                 <span>
                   <div>Team</div>
                 </span>

@@ -47,9 +47,9 @@ const Post = () => {
       <div className={styles.actionArea}>
         <p onClick={() => setLiked(!liked)}>
           {liked ? (
-            <FaHeart className={styles.iconn} />
+            <FaHeart className={`${styles.iconn} ${styles.iconn1}`} />
           ) : (
-            <FaHeartBroken className={styles.iconn} />
+            <FaHeartBroken className={`${styles.iconn} ${styles.iconn2}`} />
           )}
           12 Likes
         </p>
@@ -59,9 +59,9 @@ const Post = () => {
         </p>
         <p onClick={() => setBookmarked(!bookmarked)}>
           {bookmarked ? (
-            <FaBookmark className={styles.iconn} />
+            <FaBookmark className={`${styles.iconn} ${styles.iconn3}`} />
           ) : (
-            <FaRegBookmark className={styles.iconn} />
+            <FaRegBookmark className={`${styles.iconn} ${styles.iconn4}`} />
           )}
         </p>
         {/* <p>Comment</p>

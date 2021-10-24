@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Hero.module.css";
 const Hero = () => {
   const colorRef = useRef();
